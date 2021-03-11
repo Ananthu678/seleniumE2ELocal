@@ -16,7 +16,7 @@ public class BaseClass {
 		@BeforeClass
 		public void openBrowser() {
 			
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\I322911\\eclipse-new workspace\\Selenium_Test\\Drivers\\chromedriver.exe" );
+			System.setProperty("webdriver.chrome.driver","./Drivers\\chromedriver.exe" );
 			driver = new ChromeDriver();
 			
 			baseURL="https://www.facebook.com/";
