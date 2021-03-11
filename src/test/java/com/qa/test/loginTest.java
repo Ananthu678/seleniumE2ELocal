@@ -4,13 +4,13 @@ package com.qa.test;
 
 import org.testng.annotations.Test;
 
-import com.qa.page.AnnouncementsPage;
+
 import com.qa.page.LoginPage;
 
 public class loginTest extends BaseClass {
 
 	   
-	  @Test (priority=1)
+	  @Test
 	  public void LoginPage() {
 		  
 		   LoginPage lp = new LoginPage(driver);
@@ -24,10 +24,4 @@ public class loginTest extends BaseClass {
 		    
 	  }
 	  
-	  @Test (priority=2)
-	  public void clickProfile() {
-		  AnnouncementsPage ap=new AnnouncementsPage(driver);
-		  ap.click();
-		  
-	  }
 }
