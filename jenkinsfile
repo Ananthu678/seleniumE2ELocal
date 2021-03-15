@@ -5,21 +5,18 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the code..'
-                tool 'JDK-1.8'
                 bat "mvn clean"
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing the code..'
-                tool 'JDK-1.8'
                 bat "mvn test"
             }
         }
         stage('Compile') {
             steps {
                 echo 'Compiling the code....'
-                tool 'JDK-1.8'
                 bat "mvn compile"
             }
         }
