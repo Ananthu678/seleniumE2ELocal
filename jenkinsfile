@@ -5,21 +5,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the code..'
-                env.JAVA_HOME = tool 'JDK-1.8'
+                tool 'JDK-1.8'
                 bat "mvn clean"
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing the code..'
-                env.JAVA_HOME = tool 'JDK-1.8'
+                tool 'JDK-1.8'
                 bat "mvn test"
             }
         }
         stage('Compile') {
             steps {
                 echo 'Compiling the code....'
-                env.JAVA_HOME = tool 'JDK-1.8'
+                tool 'JDK-1.8'
                 bat "mvn compile"
             }
         }
